@@ -1,4 +1,3 @@
-import { LocalHospital } from "@material-ui/icons";
 import React from "react";
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
@@ -17,6 +16,7 @@ function Sidebar() {
         src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg"
         title="Sophie"
       />
+      
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="Covid-19 Information Center"
