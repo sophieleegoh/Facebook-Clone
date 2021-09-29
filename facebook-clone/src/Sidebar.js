@@ -8,13 +8,16 @@ import ChatIcon from "@material-ui/icons/Chat";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import { ExpandMoreOutlined } from "@material-ui/icons";
+import { useStateValue } from "./stateProvider";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue(); 
+
   return (
     <div className="sidebar">
       <SidebarRow
-        src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg"
-        title="Sophie"
+        src={user.photoURL}
+        title={user.displayName}
       />
       
       <SidebarRow
